@@ -1,0 +1,112 @@
+22:51:26 - INFO - Application Started
+22:51:32 - INFO - Launching Chrome with remote debugging...
+22:51:32 - INFO - Chrome launched. Please log in and navigate to Student Progression page.
+22:52:38 - INFO - Checking connection...
+22:52:41 - INFO - Connecting to Chrome at http://localhost:9222...
+22:52:41 - INFO - Chrome Connected
+22:52:41 - INFO - Student Progression Page Detected
+22:52:41 - INFO - 🟢 Student Progression Page
+22:52:41 - INFO - Scanning current webpage...
+22:52:41 - INFO - Students Detected: 10
+22:52:41 - ERROR - 10 students missing from JSON. Cannot start. 🔴
+22:55:29 - INFO - Loaded 10 students from JSON. 🟢 Loaded
+22:55:29 - INFO - All visible students found in JSON. Ready to start. 🟢
+22:55:34 - ERROR - Unable to locate or fill fields for PEN 232380911: cannot switch to a different thread (which happens to have exited)
+22:55:34 - ERROR - Unable to locate or fill fields for PEN 232380912: cannot switch to a different thread (which happens to have exited)
+22:55:34 - ERROR - Unable to locate or fill fields for PEN 232380913: cannot switch to a different thread (which happens to have exited)
+22:55:34 - ERROR - Unable to locate or fill fields for PEN 232380914: cannot switch to a different thread (which happens to have exited)
+22:55:34 - ERROR - Unable to locate or fill fields for PEN 232380915: cannot switch to a different thread (which happens to have exited)
+22:55:34 - ERROR - Unable to locate or fill fields for PEN 232380916: cannot switch to a different thread (which happens to have exited)
+22:55:34 - ERROR - Unable to locate or fill fields for PEN 232380917: cannot switch to a different thread (which happens to have exited)
+22:55:34 - ERROR - Unable to locate or fill fields for PEN 232380918: cannot switch to a different thread (which happens to have exited)
+22:55:34 - ERROR - Unable to locate or fill fields for PEN 232380919: cannot switch to a different thread (which happens to have exited)
+22:55:34 - ERROR - Unable to locate or fill fields for PEN 232380920: cannot switch to a different thread (which happens to have exited)
+22:55:34 - INFO - Completed Current Page
+22:55:50 - ERROR - Unable to locate or fill fields for PEN 232380911: cannot switch to a different thread (which happens to have exited)
+22:55:50 - ERROR - Unable to locate or fill fields for PEN 232380912: cannot switch to a different thread (which happens to have exited)
+22:55:50 - ERROR - Unable to locate or fill fields for PEN 232380913: cannot switch to a different thread (which happens to have exited)
+22:55:50 - ERROR - Unable to locate or fill fields for PEN 232380914: cannot switch to a different thread (which happens to have exited)
+22:55:50 - ERROR - Unable to locate or fill fields for PEN 232380915: cannot switch to a different thread (which happens to have exited)
+22:55:50 - ERROR - Unable to locate or fill fields for PEN 232380916: cannot switch to a different thread (which happens to have exited)
+22:55:50 - ERROR - Unable to locate or fill fields for PEN 232380917: cannot switch to a different thread (which happens to have exited)
+22:55:50 - ERROR - Unable to locate or fill fields for PEN 232380918: cannot switch to a different thread (which happens to have exited)
+22:55:50 - ERROR - Unable to locate or fill fields for PEN 232380919: cannot switch to a different thread (which happens to have exited)
+22:55:50 - ERROR - Unable to locate or fill fields for PEN 232380920: cannot switch to a different thread (which happens to have exited)
+22:55:50 - INFO - Completed Current Page
+22:55:59 - ERROR - Unable to locate or fill fields for PEN 232380911: cannot switch to a different thread (which happens to have exited)
+22:55:59 - ERROR - Unable to locate or fill fields for PEN 232380912: cannot switch to a different thread (which happens to have exited)
+22:55:59 - ERROR - Unable to locate or fill fields for PEN 232380913: cannot switch to a different thread (which happens to have exited)
+22:55:59 - ERROR - Unable to locate or fill fields for PEN 232380914: cannot switch to a different thread (which happens to have exited)
+22:55:59 - ERROR - Unable to locate or fill fields for PEN 232380915: cannot switch to a different thread (which happens to have exited)
+22:55:59 - ERROR - Unable to locate or fill fields for PEN 232380916: cannot switch to a different thread (which happens to have exited)
+22:55:59 - ERROR - Unable to locate or fill fields for PEN 232380917: cannot switch to a different thread (which happens to have exited)
+22:55:59 - ERROR - Unable to locate or fill fields for PEN 232380918: cannot switch to a different thread (which happens to have exited)
+22:55:59 - ERROR - Unable to locate or fill fields for PEN 232380919: cannot switch to a different thread (which happens to have exited)
+22:55:59 - ERROR - Unable to locate or fill fields for PEN 232380920: cannot switch to a different thread (which happens to have exited)
+22:55:59 - INFO - Completed Current Page
+22:56:42 - INFO - Application Started
+22:56:51 - INFO - Loaded 10 students from JSON. 🟢 Loaded
+22:56:52 - INFO - Checking connection...
+22:56:52 - INFO - Connecting to Chrome at http://localhost:9222...
+22:56:52 - INFO - Chrome Connected
+22:56:53 - INFO - Student Progression Page Detected
+22:56:53 - INFO - 🟢 Student Progression Page
+22:56:53 - INFO - Scanning current webpage...
+22:56:53 - INFO - Students Detected: 10
+22:56:53 - INFO - All visible students found in JSON. Ready to start. 🟢
+22:56:56 - ERROR - Unable to locate or fill fields for PEN 232380911: cannot switch to a different thread (which happens to have exited)
+22:56:56 - ERROR - Unable to locate or fill fields for PEN 232380912: cannot switch to a different thread (which happens to have exited)
+22:56:56 - ERROR - Unable to locate or fill fields for PEN 232380913: cannot switch to a different thread (which happens to have exited)
+22:56:56 - ERROR - Unable to locate or fill fields for PEN 232380914: cannot switch to a different thread (which happens to have exited)
+22:56:56 - ERROR - Unable to locate or fill fields for PEN 232380915: cannot switch to a different thread (which happens to have exited)
+22:56:56 - ERROR - Unable to locate or fill fields for PEN 232380916: cannot switch to a different thread (which happens to have exited)
+22:56:56 - ERROR - Unable to locate or fill fields for PEN 232380917: cannot switch to a different thread (which happens to have exited)
+22:56:56 - ERROR - Unable to locate or fill fields for PEN 232380918: cannot switch to a different thread (which happens to have exited)
+22:56:56 - ERROR - Unable to locate or fill fields for PEN 232380919: cannot switch to a different thread (which happens to have exited)
+22:56:56 - ERROR - Unable to locate or fill fields for PEN 232380920: cannot switch to a different thread (which happens to have exited)
+22:56:56 - INFO - Completed Current Page
+22:59:49 - INFO - Application Started
+22:59:50 - INFO - Checking connection...
+22:59:51 - INFO - Connecting to Chrome at http://localhost:9222...
+22:59:51 - INFO - Chrome Connected
+22:59:51 - INFO - Student Progression Page Detected
+22:59:51 - INFO - 🟢 Student Progression Page
+22:59:51 - INFO - Scanning current webpage...
+22:59:51 - INFO - Students Detected: 10
+22:59:51 - ERROR - 10 students missing from JSON. Cannot start. 🔴
+22:59:55 - INFO - Loaded 10 students from JSON. 🟢 Loaded
+22:59:55 - INFO - All visible students found in JSON. Ready to start. 🟢
+22:59:59 - INFO - Filled PEN 232380911
+22:59:59 - INFO - Filled PEN 232380912
+23:00:00 - INFO - Filled PEN 232380913
+23:00:00 - INFO - Filled PEN 232380914
+23:00:00 - INFO - Filled PEN 232380915
+23:00:00 - INFO - Filled PEN 232380916
+23:00:00 - INFO - Filled PEN 232380917
+23:00:01 - INFO - Filled PEN 232380918
+23:00:01 - INFO - Filled PEN 232380919
+23:00:01 - INFO - Filled PEN 232380920
+23:00:01 - INFO - Completed Current Page
+23:00:23 - INFO - Chrome Disconnected
+23:00:38 - INFO - Application Started
+23:01:29 - INFO - Loaded 10 students from JSON. 🟢 Loaded
+23:01:50 - INFO - Checking connection...
+23:01:51 - INFO - Connecting to Chrome at http://localhost:9222...
+23:01:51 - INFO - Chrome Connected
+23:01:51 - INFO - Student Progression Page Detected
+23:01:51 - INFO - 🟢 Student Progression Page
+23:01:51 - INFO - Scanning current webpage...
+23:01:52 - INFO - Students Detected: 10
+23:01:52 - INFO - All visible students found in JSON. Ready to start. 🟢
+23:02:17 - INFO - Filled PEN 232380911
+23:02:18 - INFO - Filled PEN 232380912
+23:02:18 - INFO - Filled PEN 232380913
+23:02:18 - INFO - Filled PEN 232380914
+23:02:18 - INFO - Filled PEN 232380915
+23:02:19 - INFO - Filled PEN 232380916
+23:02:19 - INFO - Filled PEN 232380917
+23:02:19 - INFO - Filled PEN 232380918
+23:02:19 - INFO - Filled PEN 232380919
+23:02:20 - INFO - Filled PEN 232380920
+23:02:20 - INFO - Completed Current Page
+23:04:18 - INFO - Chrome Disconnected
