@@ -14,7 +14,7 @@ class MainWindow(ctk.CTk):
     def __init__(self):
         super().__init__()
         
-        self.title("UDISE Student Progression Auto Filler")
+        self.title("UDISE student progression auto filler by Debanshu Ghosh")
         self.geometry("800x850")
         
         # Managers
@@ -33,7 +33,7 @@ class MainWindow(ctk.CTk):
     def _setup_ui(self):
         # Configuration
         ctk.set_appearance_mode("System")
-        ctk.set_default_color_theme("blue")
+        ctk.set_default_color_theme("dark-blue")
         
         # JSON Section
         json_frame = ctk.CTkFrame(self)
@@ -122,6 +122,8 @@ class MainWindow(ctk.CTk):
         self.log_box = ctk.CTkTextbox(log_frame)
         self.log_box.pack(fill="both", expand=True, padx=10, pady=5)
         self.log_box.configure(state="disabled")
+
+
 
     def _log_to_ui(self, msg: str):
         def append():
