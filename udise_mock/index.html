@@ -324,6 +324,7 @@
                         <label for="reason_${index}">Reason for Leaving School</label>
                         <select id="reason_${index}" name="reason_${index}" class="form-control">
                             <option value="">Select</option>
+                            <option value="Higher Class Not Available" ${student.reason === 'Higher Class Not Available' ? 'selected' : ''}>Higher Class Not Available</option>
                         </select>
                     </div>
                 </td>
