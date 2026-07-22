@@ -27,10 +27,10 @@ class UdiseAutomation:
             self.logger.error(f"Error checking page: {e}")
             return False
 
-    def scan_page(self) -> List[Tuple[int, str]]:
+    def scan_page(self) -> List[Tuple[int, str, bool]]:
         """
-        Scans the current page and extracts visible student PEN IDs.
-        Returns a list of tuples (row_index, pen_id).
+        Scans the current page and extracts visible student PEN IDs and their completion status.
+        Returns a list of tuples (row_index, pen_id, is_done).
         """
         self.logger.info("Scanning current webpage...")
         students_found = []
@@ -45,7 +45,9 @@ class UdiseAutomation:
                 match = re.search(r'PEN:\s*(\d+)', text)
                 if match:
                     pen_id = match.group(1).strip()
-                    students_found.append((index, pen_id))
+                    # Check if status is already "Done"
+                    is_done = row.locator(".status-done").count() > 0 or "Done" in text
+                    students_found.append((index, pen_id, is_done))
                     
             self.logger.info(f"Students Detected: {len(students_found)}")
             return students_found

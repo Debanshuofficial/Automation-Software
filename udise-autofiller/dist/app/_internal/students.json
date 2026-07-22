@@ -1,0 +1,94 @@
+{
+  "students": [
+    {
+      "pen_id": "232380911",
+      "marks": 75,
+      "attendance": 180,
+      "progression_status": "Promoted/Passed",
+      "schooling_status": "Studying in Same School",
+      "reason_for_leaving": "",
+      "section": "A"
+    },
+    {
+      "pen_id": "232380912",
+      "marks": 60,
+      "attendance": 150,
+      "progression_status": "Promoted/Passed",
+      "schooling_status": "Studying in Same School",
+      "reason_for_leaving": "",
+      "section": "B"
+    },
+    {
+      "pen_id": "232380913",
+      "marks": 90,
+      "attendance": 200,
+      "progression_status": "Promoted/Passed",
+      "schooling_status": "Studying in Same School",
+      "reason_for_leaving": "",
+      "section": "A"
+    },
+    {
+      "pen_id": "232380914",
+      "marks": 45,
+      "attendance": 120,
+      "progression_status": "Promoted/Passed",
+      "schooling_status": "Studying in Same School",
+      "reason_for_leaving": "",
+      "section": "C"
+    },
+    {
+      "pen_id": "232380915",
+      "marks": 85,
+      "attendance": 190,
+      "progression_status": "Promoted/Passed",
+      "schooling_status": "Studying in Same School",
+      "reason_for_leaving": "",
+      "section": "A"
+    },
+    {
+      "pen_id": "232380916",
+      "marks": 30,
+      "attendance": 80,
+      "progression_status": "Not Passed",
+      "schooling_status": "Studying in Same School",
+      "reason_for_leaving": "",
+      "section": "A"
+    },
+    {
+      "pen_id": "232380917",
+      "marks": 65,
+      "attendance": 160,
+      "progression_status": "Promoted/Passed",
+      "schooling_status": "Left School with TC/without TC",
+      "reason_for_leaving": "Transferred",
+      "section": "B"
+    },
+    {
+      "pen_id": "232380918",
+      "marks": 55,
+      "attendance": 140,
+      "progression_status": "Promoted/Passed",
+      "schooling_status": "Studying in Same School",
+      "reason_for_leaving": "",
+      "section": "B"
+    },
+    {
+      "pen_id": "232380919",
+      "marks": 88,
+      "attendance": 195,
+      "progression_status": "Promoted/Passed",
+      "schooling_status": "Studying in Same School",
+      "reason_for_leaving": "",
+      "section": "A"
+    },
+    {
+      "pen_id": "232380920",
+      "marks": 78,
+      "attendance": 175,
+      "progression_status": "Promoted/Passed",
+      "schooling_status": "Studying in Same School",
+      "reason_for_leaving": "",
+      "section": "C"
+    }
+  ]
+}

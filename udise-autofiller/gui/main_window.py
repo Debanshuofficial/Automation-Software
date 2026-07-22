@@ -204,17 +204,23 @@ class MainWindow(ctk.CTk):
         found_count = len(self.web_students)
         matched_count = 0
         missing_count = 0
+        skipped_count = 0
         
-        for row_index, pen_id in self.web_students:
+        for row_index, pen_id, is_done in self.web_students:
             in_json = self.student_manager.has_student(pen_id)
-            if in_json:
+            if is_done:
+                status = "Skipped (Done)"
+                json_status = "Yes" if in_json else "No"
+                skipped_count += 1
+            elif not in_json:
+                missing_count += 1
+                json_status = "No"
+                status = "Skipped (Missing)"
+                skipped_count += 1
+            else:
                 matched_count += 1
                 json_status = "Yes"
                 status = "Ready"
-            else:
-                missing_count += 1
-                json_status = "No"
-                status = "Missing"
                 
             self.tree.insert('', 'end', values=(row_index + 1, pen_id, json_status, status))
             
@@ -222,13 +228,15 @@ class MainWindow(ctk.CTk):
         self.lbl_matched.configure(text=f"Matched: {matched_count}")
         self.lbl_missing.configure(text=f"Missing: {missing_count}")
         
-        if found_count > 0 and missing_count == 0 and self.student_manager.count() > 0:
-            self.btn_start.configure(state="normal")
-            self.logger.info("All visible students found in JSON. Ready to start. 🟢")
+        if found_count > 0 and self.student_manager.count() > 0:
+            if matched_count > 0:
+                self.btn_start.configure(state="normal")
+                self.logger.info(f"Ready to start. {matched_count} to fill, {skipped_count} skipped. 🟢")
+            else:
+                self.btn_start.configure(state="disabled")
+                self.logger.warning("No students ready to fill (all skipped or missing). 🟡")
         else:
             self.btn_start.configure(state="disabled")
-            if found_count > 0 and missing_count > 0:
-                self.logger.error(f"{missing_count} students missing from JSON. Cannot start. 🔴")
 
     def _start_filling(self):
         self.btn_start.configure(state="disabled")
@@ -242,10 +250,14 @@ class MainWindow(ctk.CTk):
         def fill_task():
             total = len(self.web_students)
             filled = 0
-            for row_index, pen_id in self.web_students:
+            for row_index, pen_id, is_done in self.web_students:
                 if self.automation and self.automation._should_stop:
                     self.logger.info("Filling stopped by user.")
                     break
+                    
+                if is_done:
+                    self.logger.info(f"Skipping PEN {pen_id}: already done.")
+                    continue
                     
                 student = self.student_manager.get_student(pen_id)
                 if student:
@@ -253,6 +265,8 @@ class MainWindow(ctk.CTk):
                     if success:
                         filled += 1
                         self._update_progress(filled, total)
+                else:
+                    self.logger.info(f"Skipping PEN {pen_id}: not matched in JSON.")
                 
                 # Keep UI responsive during the loop
                 self.update()
