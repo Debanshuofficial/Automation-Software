@@ -47,7 +47,7 @@ class MainWindow(ctk.CTk):
         ctk.CTkLabel(header_frame, text="by Debanshu Ghosh", font=body_font, text_color="gray").pack(side="right", anchor="s")
 
         # Main Content Container
-        main_frame = ctk.CTkFrame(self, fg_color="transparent")
+        main_frame = ctk.CTkScrollableFrame(self, fg_color="transparent", scrollbar_button_color="#3a86ff", scrollbar_button_hover_color="#0056b3")
         main_frame.pack(fill="both", expand=True, padx=25, pady=10)
               # Top Grid: 3 columns layout
         top_grid = ctk.CTkFrame(main_frame, fg_color="transparent")
@@ -98,7 +98,8 @@ class MainWindow(ctk.CTk):
             font=ctk.CTkFont(family="Segoe UI", size=16, weight="bold"),
             fg_color="#e67e22",
             hover_color="#d35400",
-            text_color="white"
+            text_color="white",
+            text_color_disabled="#f3c6a5"
         )
         self.btn_scan.pack(side="top", fill="both", expand=True, pady=(0, 5))
         
@@ -111,7 +112,8 @@ class MainWindow(ctk.CTk):
             font=ctk.CTkFont(family="Segoe UI", size=16, weight="bold"),
             fg_color="#9b59b6",
             hover_color="#8e44ad",
-            text_color="white"
+            text_color="white",
+            text_color_disabled="#d2b4de"
         )
         self.btn_write.pack(side="bottom", fill="both", expand=True, pady=(5, 0))
         
