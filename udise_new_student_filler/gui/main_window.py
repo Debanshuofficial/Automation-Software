@@ -43,8 +43,17 @@ class MainWindow(ctk.CTk):
         header_frame = ctk.CTkFrame(self, fg_color="transparent")
         header_frame.pack(pady=(20, 10), padx=25, fill="x")
         
-        ctk.CTkLabel(header_frame, text="🎓 UDISE+ AutoFiller", font=title_font, text_color="#3a86ff").pack(side="left")
-        ctk.CTkLabel(header_frame, text="by Debanshu Ghosh", font=body_font, text_color="gray").pack(side="right", anchor="s")
+        # Left side of header (Titles)
+        title_frame = ctk.CTkFrame(header_frame, fg_color="transparent")
+        title_frame.pack(side="left")
+        ctk.CTkLabel(title_frame, text="🎓 UDISE+ AutoFiller", font=title_font, text_color="#3a86ff").pack(side="left")
+        ctk.CTkLabel(title_frame, text="by Debanshu Ghosh", font=body_font, text_color="gray").pack(side="left", anchor="s", padx=(10, 0), pady=(0, 5))
+
+        # Right side of header (Buttons)
+        top_btn_frame = ctk.CTkFrame(header_frame, fg_color="transparent")
+        top_btn_frame.pack(side="right")
+        ctk.CTkButton(top_btn_frame, text="Launch Chrome", command=self._launch_chrome, fg_color="#28a745", hover_color="#218838", font=body_font, width=120).pack(side="left", padx=(0, 10))
+        ctk.CTkButton(top_btn_frame, text="Relaunch", command=self._relaunch, fg_color="#dc3545", hover_color="#c82333", font=body_font, width=90).pack(side="left")
 
         # Main Content Container
         main_frame = ctk.CTkScrollableFrame(self, fg_color="transparent", scrollbar_button_color="#3a86ff", scrollbar_button_hover_color="#0056b3")
@@ -68,8 +77,7 @@ class MainWindow(ctk.CTk):
         
         btn_inner_file = ctk.CTkFrame(file_frame, fg_color="transparent")
         btn_inner_file.pack(fill="x", padx=15, pady=(0, 15))
-        ctk.CTkButton(btn_inner_file, text="Browse", command=self._browse_json, font=body_font).pack(side="top", fill="x", expand=True, pady=(0, 5))
-        ctk.CTkButton(btn_inner_file, text="Relaunch", command=self._relaunch, fg_color="#dc3545", hover_color="#c82333", font=body_font).pack(side="top", fill="x", expand=True)
+        ctk.CTkButton(btn_inner_file, text="Browse", command=self._browse_json, font=body_font).pack(side="top", fill="x", expand=True)
         
         # 2. Browser Connection (Column 1)
         browser_frame = ctk.CTkFrame(top_grid, corner_radius=12)
@@ -82,8 +90,7 @@ class MainWindow(ctk.CTk):
         
         btn_inner_browser = ctk.CTkFrame(browser_frame, fg_color="transparent")
         btn_inner_browser.pack(fill="x", padx=15, pady=(0, 15))
-        ctk.CTkButton(btn_inner_browser, text="Connect & Scan", command=self._check_connection, font=body_font).pack(side="top", fill="x", expand=True, pady=(0, 5))
-        ctk.CTkButton(btn_inner_browser, text="Launch Chrome", command=self._launch_chrome, fg_color="#28a745", hover_color="#218838", font=body_font).pack(side="top", fill="x", expand=True)
+        ctk.CTkButton(btn_inner_browser, text="Connect & Scan", command=self._check_connection, font=body_font).pack(side="top", fill="x", expand=True)
         
         # 3. Actions (Column 2)
         action_frame = ctk.CTkFrame(top_grid, corner_radius=12, fg_color="transparent")
@@ -172,7 +179,7 @@ class MainWindow(ctk.CTk):
         ctk.CTkLabel(table_frame, text="📋 Current Page Field Mapping", font=heading_font).pack(anchor="w", padx=15, pady=(15, 5))
         
         columns = ('site_label', 'json_field', 'json_value', 'status')
-        self.tree = ttk.Treeview(table_frame, columns=columns, show='headings', height=6)
+        self.tree = ttk.Treeview(table_frame, columns=columns, show='headings')
         self.tree.heading('site_label', text='Website Field Label')
         self.tree.heading('json_field', text='JSON Field Name')
         self.tree.heading('json_value', text='JSON Value')
@@ -296,11 +303,14 @@ class MainWindow(ctk.CTk):
             self.tree.delete(item)
             
         if not self.automation or not found_fields:
+            self.tree.configure(height=1)
             return
             
         for display_name, field_name, value in found_fields:
             status = "Ready" if value else "Empty in JSON"
             self.tree.insert('', 'end', values=(display_name, field_name, value, status))
+            
+        self.tree.configure(height=max(1, len(found_fields)))
             
     def _update_write_btn_state(self):
         if self.browser_ctrl.connected:
