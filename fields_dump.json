@@ -1,0 +1,211 @@
+{
+  "Language": {
+    "type": "select",
+    "options": [
+      "English",
+      "\u0939\u093f\u0902\u0926\u0940"
+    ]
+  },
+  "gender": {
+    "type": "select",
+    "options": [
+      "Select",
+      "1-Male",
+      "2-Female",
+      "3-Transgender"
+    ]
+  },
+  "socCatId": {
+    "type": "select",
+    "options": [
+      "Select",
+      "1 - GENERAL",
+      "2 - SC",
+      "3 - ST",
+      "4 - OBC"
+    ]
+  },
+  "minorityId": {
+    "type": "select",
+    "options": [
+      "Select",
+      "1-Muslim",
+      "2-Christian",
+      "3-Sikh",
+      "4-Buddhist",
+      "5-Parsi",
+      "6-Jain",
+      "7-NA"
+    ]
+  },
+  "isBplYN": {
+    "type": "radio",
+    "options": []
+  },
+  "aayBplYN": {
+    "type": "radio",
+    "options": []
+  },
+  "ewsYN": {
+    "type": "radio",
+    "options": []
+  },
+  "cwsnYN": {
+    "type": "radio",
+    "options": []
+  },
+  "disabilityCerti": {
+    "type": "radio",
+    "options": []
+  },
+  "natIndYN": {
+    "type": "radio",
+    "options": []
+  },
+  "ooscYN": {
+    "type": "radio",
+    "options": []
+  },
+  "ooscMainstreamedYN": {
+    "type": "select",
+    "options": [
+      "Select",
+      "1-In current academic year",
+      "2-In earlier  academic year"
+    ]
+  },
+  "bloodGroup": {
+    "type": "select",
+    "options": [
+      "Select",
+      "A+",
+      "A-",
+      "B+",
+      "B-",
+      "O+",
+      "O-",
+      "AB+",
+      "AB-",
+      "Under Investigation - Result will be updated soon"
+    ]
+  },
+  "mediumOfInstruction": {
+    "type": "select",
+    "options": [
+      "Select",
+      "2-Bengali"
+    ]
+  },
+  "languageGroup": {
+    "type": "select",
+    "options": [
+      "Select"
+    ]
+  },
+  "foreignSubject": {
+    "type": "select",
+    "options": [
+      "Select"
+    ]
+  },
+  "academicStream": {
+    "type": "select",
+    "options": [
+      "Select"
+    ]
+  },
+  "enrStatusPY": {
+    "type": "select",
+    "options": [
+      "Select",
+      "1-Studied at Current/Same School",
+      "2-Studied at Other School",
+      "4-None/Not Studying",
+      "5-Studying in Unrecognized/Open School"
+    ]
+  },
+  "classPY": {
+    "type": "select",
+    "options": [
+      "Select",
+      "PP-3",
+      "PP-2",
+      "PP-1",
+      "I",
+      "II",
+      "III",
+      "IV",
+      "V",
+      "VI",
+      "VII",
+      "VIII",
+      "IX",
+      "X",
+      "XI",
+      "XII"
+    ]
+  },
+  "isRte": {
+    "type": "radio",
+    "options": []
+  },
+  "examResultPy": {
+    "type": "select",
+    "options": [
+      "Select",
+      "Promoted/Passed",
+      "Not Promoted/Not Passed/Repeater",
+      "Promoted/Passed without Examination"
+    ]
+  },
+  "olympdsNlc": {
+    "type": "radio",
+    "options": [
+      "1",
+      "2"
+    ]
+  },
+  "nccYn": {
+    "type": "radio",
+    "options": [
+      "1",
+      "2"
+    ]
+  },
+  "nssYn": {
+    "type": "radio",
+    "options": [
+      "1",
+      "2"
+    ]
+  },
+  "scoutsYn": {
+    "type": "radio",
+    "options": [
+      "1",
+      "2"
+    ]
+  },
+  "distanceFrmSchool": {
+    "type": "select",
+    "options": [
+      "Select",
+      "1 - Less than 1 km",
+      "2 - Between 1-3 Kms",
+      "3 - Between 3-5 Kms",
+      "4 - More than 5 Kms"
+    ]
+  },
+  "parentEducation": {
+    "type": "select",
+    "options": [
+      "Select",
+      "1 - Primary",
+      "2 - Upper Primary",
+      "3 - Secondary or Equivalent",
+      "4 - Higher Secondary or Equivalent",
+      "5 - More than Higher Secondary",
+      "6 - No Schooling Experience"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "student_name": "JOHN DOE",
+    "gender": "Male",
+    "dob": "15/05/2012",
+    "state_code": "ST12345",
+    "mother_name": "JANE DOE",
+    "father_name": "RICHARD DOE",
+    "guardian_name": "",
+    "aadhaar_no": "123456789012",
+    "name_on_aadhaar": "JOHN DOE",
+    "admission_date": "01/04/2026",
+    "mobile_number": "9876543210",
+    "alt_mobile_number": "",
+    "cwsn": "No",
+    "address": "123 MAIN STREET, CITY",
+    "pincode": "700001",
+    "contact_email": "john@example.com",
+    "mother_tongue": "English",
+    "social_category": "General",
+    "minority_group": "NA",
+    "bpl_beneficiary": "No"
+}
